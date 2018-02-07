@@ -1,0 +1,12 @@
+# coding: utf8
+# Levon Gukasyan
+# Fecha De creacion 07/02/2018
+import time
+print "Buenas"
+time.sleep(1)
+EDAD = input ("Cuantos años tienes?")
+if EDAD >=18 and EDAD <=23: 
+    print "con", EDAD , "puedes pasa a la sesion de los jovenes"
+    
+else: 
+		print "con", EDAD, "no puedes pasar"
