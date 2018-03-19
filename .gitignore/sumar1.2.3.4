@@ -1,0 +1,104 @@
+# coding: utf8
+# Levon Gukasyan
+
+# Inicializaciones
+salir   = "N"
+suma1   = 1
+maximo  = 5 
+suma    = 0
+
+if maximo <= 0 :
+	print "Error!"
+
+while ( salir=="N" ):
+	# Hago cosas
+	if suma1%2==0:
+		print suma1,
+        if suma1 == maximo -2:
+			print "+",
+        
+	# Incremento
+        suma = suma + suma1
+        suma1  = suma1 + 1
+	# Activo indicador de salida si toca
+	if ( suma1 > maximo): # Condición de salida
+		salir = "S"
+print "=", suma1
+
+------------------------------------------------------------
+# coding: utf8
+# Levon Gukasyan
+import time
+
+# Inicializaciones
+salir  = "N"
+suma   = 1
+suma1  = 0
+maximo = 5
+if maximo <= 0 :
+	print "Error 404"
+
+while ( salir=="N" ):
+	print suma,
+        if suma1 <=maximo +1:
+			print "+",
+
+	# Incremento
+	suma1  = suma + suma1
+	suma  = suma + 1
+	# Activo indicador de salida si toca
+	time.sleep(0.5)
+	if ( suma > maximo): # Condición de salida
+		print "=",suma1
+		salir = "S"
+
+
+-------------------------------------------------------------
+# Levon Gukasyan
+import time
+
+# Inicializaciones
+salir  = "N"
+suma   = 1
+suma1  = 0
+maximo = 5
+if maximo <= 0 :
+	print "Error 404"
+
+while ( salir=="N" ):
+	print suma,
+        if suma1 <=maximo +1:
+			print "+",
+
+	# Incremento
+	suma1  = suma + suma1
+	suma  = suma + 1
+	# Activo indicador de salida si toca
+	time.sleep(0.5)
+	if ( suma > maximo): # Condición de salida
+		print "=",suma1
+		salir = "S"
+---------------------------------------------------
+# coding: utf8
+# Levon Gukasyan
+
+# Inicializaciones
+salir  = "N"
+suma   = 1
+maximo = 5
+suma1  = 0
+
+if maximo <= 0 :
+	print "Error 404"
+
+while ( salir=="N" ):
+	if suma%2==0 :
+		print suma
+		
+	# Incremento
+	suma = suma + suma1
+	suma = suma + 1
+	# Activo indicador de salida si toca
+	if ( suma > maximo): # Condición de salida
+		print "=",suma
+		salir = "S"	
