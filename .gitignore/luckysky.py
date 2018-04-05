@@ -1,8 +1,8 @@
 # coding: utf8
 import os
 from decimal import Decimal
-os.system('cls')
-print "https://www.queelvueloteacompañe.estroll "
+os.system('clear')
+print "https://www.queelvueloteacompañe.estroll "  
 print """   
        | **    BIENVENIDO A   ** |
        |Luck Sky Vueling Airlines| """
@@ -11,16 +11,16 @@ print "\n"
 print "--PRECIO DEL BILLETE: 500$"
 
 print "--Es usted trabajador? O del LADO OSCURO?"
-
+#PREGUNTA SI ES TRABAJADOR O NO , O SI ES DEL LADO OSCURO
 trabajador = raw_input("--s/n/lo:")
 
 trabajador = trabajador.upper()
-# Como estoy programando en windows sera cls y en linux clear.
-os.system('cls') 
+
+os.system('clear') 
 if trabajador =="S" : 
 	print """
 	   ******Bienvenido empleado******"""
-	
+	# AQUI PREGUNTA EL CARGO DE TRABAJADOR QUE TIENE
 	print """
 	                       | 1-AZAFATA DE HALCÓN MILENARIO
 	Usted que cargo tiene? | 2-HAN SOLO PILOTO
@@ -28,10 +28,10 @@ if trabajador =="S" :
 	                       
 	 
 	cargo = input("--1,2,3 o 4:")
-	print "--Usted tiene PROMO LEIA?"
+	print "--Usted tiene PROMO LEIA?"# PREGUNTA SI TIENE PROMO LEIA 
 	desc  = raw_input ("--s/n:")
 	desc  = desc.upper()
-	os.system('cls') 
+	os.system('clear') 
 	
 	if cargo == 1 and desc == "S": 
 		print "--Azafata De Halcon Milenario tiene un 45% desc."
@@ -69,8 +69,8 @@ if trabajador =="S" :
 		
 elif  trabajador == "N" :
 	print "--De acuerdo"
-	os.system('cls')
-
+	os.system('clear')
+#AQUI PREGUNTA LA EDAD DEL CLIENTE
 	edad = input("--Introduzca su edad: ")
 	 
 
@@ -95,7 +95,7 @@ elif  trabajador == "N" :
 		
 	print "GRACIAS POR SU VISITA"
 		
-elif trabajador == "LO" :
+elif trabajador == "LO" :#SI ES DEL LADO OSCURO LE PREGUNTA SI ES LORD SITH O DARTH VADER
 	print """   
 		| **    BIENVENIDO AL   ** |
 		|        LADO OSCURO       | """
@@ -105,7 +105,7 @@ elif trabajador == "LO" :
 	Usted que targeta tiene?  | 2-DARTH VADER"""
 	
 	cargo2 = input("--1/2:")     
-	print "--Usted tiene PROMO LEIA?"
+	print "--Usted tiene PROMO LEIA?"# PREGUNTA SI TIENE PROMO LEIA 
 	desc2  = raw_input ("--s/n:")
 	desc2 = desc2.upper()
 	
@@ -121,11 +121,11 @@ elif trabajador == "LO" :
 		print "--DARTH VADER TIENE UN DESCUENTO DEL 65%"
 		print "--PRECIO TOTAL",Decimal(500-(500*65/100)),"$"
 		
-	if cargo2 == 1 and desc2 =="N" :
+	if cargo2 == 2 and desc2 =="N" :
 		print "--DARTH VADER TIENE UN DESCUENTO DEL 20%"
 		print "--PRECIO TOTAL",Decimal(500-(500*20/100)),"$"
 	print "GRACIAS POR SU VISITA"
 	
 else:
 	print "Error"
-		
+
